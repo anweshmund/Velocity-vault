@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Preventive Maintenance - Velocity Vault</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="maintenance.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="tbar">
+        <div class="tlft">
+            <a href="index.html" class="back">
+                <i class="fas fa-arrow-left"></i> Back to Home
+            </a>
+        </div>
+        <div class="trgt">
+            <div class="help">
+                <i class="fas fa-phone"></i>
+                <span>Service: 1-800-VELOCITY</span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <h1>Preventive Maintenance</h1>
+        <p>Keep your supercar in perfect condition</p>
+        <div class="stat">
+            <div class="stat-item">
+                <span class="num">5000+</span>
+                <span class="text">Cars Serviced</span>
+            </div>
+            <div class="stat-item">
+                <span class="num">100%</span>
+                <span class="text">Certified Mechanics</span>
+            </div>
+            <div class="stat-item">
+                <span class="num">24/7</span>
+                <span class="text">Support Available</span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Service Plans -->
+    <div class="plan">
+        <h2>Maintenance Plans</h2>
+        <div class="grid">
+            <div class="card">
+                <div class="head">
+                    <h3>Basic Care</h3>
+                    <span class="cost">$299</span>
+                    <span class="freq">/month</span>
+                </div>
+                <ul class="feat">
+                    <li><i class="fas fa-check"></i> Monthly Inspection</li>
+                    <li><i class="fas fa-check"></i> Oil Change</li>
+                    <li><i class="fas fa-check"></i> Tire Rotation</li>
+                    <li><i class="fas fa-check"></i> Brake Check</li>
+                    <li><i class="fas fa-check"></i> Digital Report</li>
+                </ul>
+                <button class="book">Choose Plan</button>
+            </div>
+
+            <div class="card prem">
+                <div class="badge">Most Popular</div>
+                <div class="head">
+                    <h3>Premium Care</h3>
+                    <span class="cost">$599</span>
+                    <span class="freq">/month</span>
+                </div>
+                <ul class="feat">
+                    <li><i class="fas fa-check"></i> Bi-weekly Inspection</li>
+                    <li><i class="fas fa-check"></i> Premium Oil Change</li>
+                    <li><i class="fas fa-check"></i> Wheel Alignment</li>
+                    <li><i class="fas fa-check"></i> Full Brake Service</li>
+                    <li><i class="fas fa-check"></i> Performance Tuning</li>
+                    <li><i class="fas fa-check"></i> 24/7 Priority Support</li>
+                </ul>
+                <button class="book">Choose Plan</button>
+            </div>
+
+            <div class="card">
+                <div class="head">
+                    <h3>Elite Care</h3>
+                    <span class="cost">$999</span>
+                    <span class="freq">/month</span>
+                </div>
+                <ul class="feat">
+                    <li><i class="fas fa-check"></i> Weekly Inspection</li>
+                    <li><i class="fas fa-check"></i> Race-Grade Service</li>
+                    <li><i class="fas fa-check"></i> Track Day Support</li>
+                    <li><i class="fas fa-check"></i> Custom Tuning</li>
+                    <li><i class="fas fa-check"></i> Dedicated Engineer</li>
+                    <li><i class="fas fa-check"></i> Unlimited Support</li>
+                </ul>
+                <button class="book">Choose Plan</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Features Section -->
+    <section class="feat">
+        <h2>Why Choose Our Maintenance?</h2>
+        <div class="grid">
+            <div class="item">
+                <i class="fas fa-tools"></i>
+                <h3>Expert Mechanics</h3>
+                <p>Factory-trained technicians with supercar expertise</p>
+            </div>
+            <div class="item">
+                <i class="fas fa-mobile-alt"></i>
+                <h3>Digital Reports</h3>
+                <p>Detailed service reports on your mobile app</p>
+            </div>
+            <div class="item">
+                <i class="fas fa-shield-alt"></i>
+                <h3>Parts Warranty</h3>
+                <p>2-year warranty on all replacement parts</p>
+            </div>
+            <div class="item">
+                <i class="fas fa-clock"></i>
+                <h3>Scheduled Service</h3>
+                <p>Convenient scheduling that fits your timeline</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Booking Form -->
+    <section class="book-sect">
+        <h2>Schedule a Check-up</h2>
+        <form class="form">
+            <div class="form-grid">
+                <div class="input">
+                    <label>Car Make</label>
+                    <select required>
+                        <option value="">Select Make</option>
+                        <option>Ferrari</option>
+                        <option>Lamborghini</option>
+                        <option>McLaren</option>
+                        <option>Porsche</option>
+                    </select>
+                </div>
+                <div class="input">
+                    <label>Car Model</label>
+                    <input type="text" placeholder="Enter Model" required>
+                </div>
+                <div class="input">
+                    <label>Preferred Date</label>
+                    <input type="date" required>
+                </div>
+                <div class="input">
+                    <label>Preferred Time</label>
+                    <input type="time" required>
+                </div>
+            </div>
+            <button type="submit" class="submit">Schedule Check</button>
+        </form>
+    </section>
+</body>
+</html> 

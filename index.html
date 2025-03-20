@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="Velocity Vault, Car Maintenance, car parts,car home service,Roadside Assistance,Fuel Delivery,Instant Car Repair ,Motor Insurance">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Velocity Vault - Premium Car Services</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Background Video -->
+    <div class="video-wrapper">
+        <video autoplay muted loop id="myVideo">
+            <source src="assets/4632167-uhd_3840_2160_25fps.mp4" type="video/mp4">
+        </video>
+        <div class="overlay"></div>
+    </div>
+
+    <nav class="navbar">
+        <div class="logo">
+            <i class="fas fa-car-side"></i>
+            <span>Velocity Vault</span>
+        </div>
+        <ul class="menu-items">
+            <li><a href="#home">Home</a></li>
+            <li><a href="shop.html">Shop</a></li>
+            <li><a href="#featured">Featured</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="user-controls">
+            <a href="login.html" class="login-btn">Login</a>
+            <div class="shopping-cart">
+                <i class="fas fa-shopping-cart"></i>
+                <span class="item-count">0</span>
+            </div>
+        </div>
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </nav>
+
+    <header class="main-banner">
+        <div class="banner-content">
+            <h1>Welcome to Velocity Vault</h1>
+            <p>Your Premium Destination for Car Services</p>
+            <button class="action-button" onclick="window.location.href='shop.html'">Shop Now</button>
+        </div>
+    </header>
+
+    <section id="services" class="services">
+        <h2>Our Services</h2>
+        <div class="services-list">
+            <div class="service-box">
+                <div class="service-symbol">
+                    <i class="fas fa-wrench"></i>
+                </div>
+                <h3>Home Repair Service</h3>
+                <p>Expert mechanics at your doorstep. We bring the garage to you!</p>
+                <ul class="feature-list">
+                    <li><i class="fas fa-check"></i> Same-day service</li>
+                    <li><i class="fas fa-check"></i> Professional tools</li>
+                    <li><i class="fas fa-check"></i> Certified mechanics</li>
+                </ul>
+                <button class="book-now" onclick="window.location.href='repair.html'">Book Service</button>
+            </div>
+                    
+            <div class="service-box">
+                <div class="service-symbol">
+                    <i class="fas fa-truck-pickup"></i>
+                </div>
+                <h3>24/7 Roadside Assistance</h3>
+                <p>Stuck somewhere? We'll reach you in minutes!</p>
+                <ul class="feature-list">
+                    <li><i class="fas fa-check"></i> 24/7 availability</li>
+                    <li><i class="fas fa-check"></i> Quick response time</li>
+                    <li><i class="fas fa-check"></i> GPS tracking</li>
+                </ul>
+                <button class="emergency-call" onclick="window.location.href='roadside.html'">SOS Pickup</button>
+            </div>
+
+            <div class="service-box">
+                <div class="service-symbol">
+                    <i class="fas fa-tools"></i>
+                </div>
+                <h3>Preventive Maintenance</h3>
+                <p>Regular checkups to keep your car in perfect condition</p>
+                <ul class="feature-list">
+                    <li><i class="fas fa-check"></i> Scheduled service</li>
+                    <li><i class="fas fa-check"></i> Digital reports</li>
+                    <li><i class="fas fa-check"></i> Parts warranty</li>
+                </ul>
+                <button class="book-now" onclick="window.location.href='maintenance.html'">Schedule Check</button>
+            </div>
+            
+
+            <div class="service-box">
+                <div class="service-symbol">
+                    <i class="fas fa-mobile-alt"></i>
+                </div>
+                <h3>Smart Diagnostics</h3>
+                <p>AI-powered car health monitoring system</p>
+                <ul class="feature-list">
+                    <li><i class="fas fa-check"></i> Real-time monitoring</li>
+                    <li><i class="fas fa-check"></i> Predictive alerts</li>
+                    <li><i class="fas fa-check"></i> Mobile app support</li>
+                </ul>
+                <button class="book-now">Get Started</button>
+            </div>
+        </div>
+    </section>
+
+    <div class="emergency-popup">
+        <button class="emergency-button">
+            <i class="fas fa-phone"></i>
+            <span>Emergency Service</span>
+        </button>
+    </div>
+
+   
+
+    <section class="revw">
+        <h2>Customer Reviews</h2>
+        <div class="grid">
+            <div class="card">
+                <div class="user">
+                    <img src="https://randomuser.me/api/portraits/men/44.jpg" alt="Customer">
+                    <div class="info">
+                        <h3>Rajesh Kumar</h3>
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <p class="text">"Excellent service! The team arrived within 30 minutes and fixed my car's battery issue right at my doorstep. Highly recommended!"</p>
+                <span class="date">2 days ago</span>
+            </div>
+
+            <div class="card">
+                <div class="user">
+                    <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Customer">
+                    <div class="info">
+                        <h3>Priya Sharma</h3>
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half"></i>
+                        </div>
+                    </div>
+                </div>
+                <p class="text">"Very professional and reliable service. The mechanic was knowledgeable and explained everything clearly. Fair pricing too!"</p>
+                <span class="date">1 week ago</span>
+            </div>
+
+            <div class="card">
+                <div class="user">
+                    <img src="https://randomuser.me/api/portraits/men/22.jpg" alt="Customer">
+                    <div class="info">
+                        <h3>Amit Patel</h3>
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <p class="text">"Used their roadside assistance service when my car broke down on the highway. Quick response and great help. Worth every penny!"</p>
+                <span class="date">2 weeks ago</span>
+            </div>
+
+            <div class="card">
+                <div class="user">
+                    <img src="https://randomuser.me/api/portraits/women/42.jpg" alt="Customer">
+                    <div class="info">
+                        <h3>Neha Verma</h3>
+                        <div class="star">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <p class="text">"Regular maintenance service is excellent. They keep my luxury car in perfect condition. The digital reports are very helpful!"</p>
+                <span class="date">3 weeks ago</span>
+            </div>
+        </div>
+    </section>
+
+   
+    <footer>
+        <div class="footer-content">
+            <div class="footer-block">
+                <h3>Velocity Vault</h3>
+                <p>Your trusted source for premium racing gear.</p>
+            </div>
+            <div class="footer-block">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="pages/shop.html">Shop</a></li>
+                    <li><a href="#about">About Us</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-block">
+                <h3>Connect With Us</h3>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
