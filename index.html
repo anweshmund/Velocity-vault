@@ -5,7 +5,7 @@
     <meta name="keywords" content="Velocity Vault, Car Maintenance, car parts,car home service,Roadside Assistance,Fuel Delivery,Instant Car Repair ,Motor Insurance">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Velocity Vault - Premium Car Services</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="../styles/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
@@ -13,7 +13,7 @@
     <!-- Background Video -->
     <div class="video-wrapper">
         <video autoplay muted loop id="myVideo">
-            <source src="assets/4632167-uhd_3840_2160_25fps.mp4" type="video/mp4">
+            <source src="../assets/4632167-uhd_3840_2160_25fps.mp4" type="video/mp4">
         </video>
         <div class="overlay"></div>
     </div>
@@ -25,13 +25,13 @@
         </div>
         <ul class="menu-items">
             <li><a href="#home">Home</a></li>
-            <li><a href="shop.html">Shop</a></li>
+            <li><a href="pages/shop.html">Shop</a></li>
             <li><a href="#featured">Featured</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
         <div class="user-controls">
-            <a href="login.html" class="login-btn">Login</a>
+            <a href="pages/login.html" class="login-btn">Login</a>
             <div class="shopping-cart">
                 <i class="fas fa-shopping-cart"></i>
                 <span class="item-count">0</span>
@@ -48,7 +48,7 @@
         <div class="banner-content">
             <h1>Welcome to Velocity Vault</h1>
             <p>Your Premium Destination for Car Services</p>
-            <button class="action-button" onclick="window.location.href='shop.html'">Shop Now</button>
+            <button class="action-button" onclick="window.location.href='pages/shop.html'">Shop Now</button>
         </div>
     </header>
 
@@ -66,7 +66,7 @@
                     <li><i class="fas fa-check"></i> Professional tools</li>
                     <li><i class="fas fa-check"></i> Certified mechanics</li>
                 </ul>
-                <button class="book-now" onclick="window.location.href='repair.html'">Book Service</button>
+                <button class="book-now" onclick="window.location.href='pages/repair.html'">Book Service</button>
             </div>
                     
             <div class="service-box">
@@ -80,7 +80,7 @@
                     <li><i class="fas fa-check"></i> Quick response time</li>
                     <li><i class="fas fa-check"></i> GPS tracking</li>
                 </ul>
-                <button class="emergency-call" onclick="window.location.href='roadside.html'">SOS Pickup</button>
+                <button class="emergency-call" onclick="window.location.href='pages/roadside.html'">SOS Pickup</button>
             </div>
 
             <div class="service-box">
@@ -94,7 +94,7 @@
                     <li><i class="fas fa-check"></i> Digital reports</li>
                     <li><i class="fas fa-check"></i> Parts warranty</li>
                 </ul>
-                <button class="book-now" onclick="window.location.href='maintenance.html'">Schedule Check</button>
+                <button class="book-now" onclick="window.location.href='pages/maintenance.html'">Schedule Check</button>
             </div>
             
 
@@ -225,5 +225,22 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        // Add new vehicle
+        addVehicleForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            const newVehicle = {
+                id: Date.now(),
+                make: document.getElementById('vehicleMake').value,
+                model: document.getElementById('vehicleModel').value,
+                year: document.getElementById('vehicleYear').value,
+                plate: document.getElementById('vehiclePlate').value
+            };
+            vehicles.push(newVehicle);
+            localStorage.setItem('vehicles', JSON.stringify(vehicles));
+            displayVehicles();
+        });
+    </script>
 </body>
 </html>

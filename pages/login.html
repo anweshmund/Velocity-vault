@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Velocity Vault</title>
+    <link rel="stylesheet" href="../styles/login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="login-page">
+    <div class="login-wrapper">
+        <div class="login-container">
+            <div class="login-header">
+                <div class="logo-animation">
+                    <i class="fas fa-car-side"></i>
+                </div>
+                <h1>Velocity Vault</h1>
+                <p class="welcome-text">Welcome back! Please login to your account.</p>
+            </div>
+            <form class="login-form" id="loginForm">
+                <div class="input-wrapper">
+                    <i class="fas fa-user"></i>
+                    <input type="email" placeholder="Email" required>
+                    <div class="input-focus-effect"></div>
+                </div>
+                <div class="input-wrapper">
+                    <i class="fas fa-lock"></i>
+                    <input type="password" placeholder="Password" required>
+                    <i class="fas fa-eye-slash toggle-password"></i>
+                    <div class="input-focus-effect"></div>
+                </div>
+                <div class="remember-forgot">
+                    <label class="remember-me">
+                        <input type="checkbox">
+                        <span>Remember me</span>
+                    </label>
+                    <a href="#" class="forgot-link">Forgot Password?</a>
+                </div>
+                <button type="submit" class="login-button">
+                    <span>Login</span>
+                    <i class="fas fa-arrow-right"></i>
+                </button>
+                <div class="social-login">
+                    <p>Or login with</p>
+                    <div class="social-buttons">
+                        <button type="button" class="social-btn google">
+                            <i class="fab fa-google"></i>
+                            <span>Google</span>
+                        </button>
+                        <button type="button" class="social-btn facebook">
+                            <i class="fab fa-facebook-f"></i>
+                            <span>Facebook</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="login-links">
+                    <p>Don't have an account? <a href="#" class="create-account">Create Account</a></p>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        // Toggle password visibility
+        document.querySelector('.toggle-password').addEventListener('click', function() {
+            const passwordInput = this.previousElementSibling;
+            const type = passwordInput.getAttribute('type') === 'password' ? 'text' : 'password';
+            passwordInput.setAttribute('type', type);
+            this.classList.toggle('fa-eye');
+            this.classList.toggle('fa-eye-slash');
+        });
+
+        // Form submission animation
+        document.getElementById('loginForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const button = this.querySelector('.login-button');
+            button.classList.add('loading');
+            
+            // Simulate API call
+            setTimeout(() => {
+                button.classList.remove('loading');
+                button.classList.add('success');
+                setTimeout(() => {
+                    window.location.href = 'index.html';
+                }, 1000);
+            }, 2000);
+        });
+
+        // Input focus effects
+        document.querySelectorAll('.input-wrapper input').forEach(input => {
+            input.addEventListener('focus', function() {
+                this.parentElement.classList.add('focused');
+            });
+            input.addEventListener('blur', function() {
+                if (!this.value) {
+                    this.parentElement.classList.remove('focused');
+                }
+            });
+        });
+    </script>
+</body>
+</html> 
