@@ -241,6 +241,14 @@
             localStorage.setItem('vehicles', JSON.stringify(vehicles));
             displayVehicles();
         });
+
+        const burger = document.querySelector('.burger');
+        const menu = document.querySelector('.menu-items');
+
+        burger.addEventListener('click', () => {
+            menu.classList.toggle('menu-active');
+            burger.classList.toggle('toggle');
+        });
     </script>
 </body>
 </html>

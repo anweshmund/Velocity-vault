@@ -62,7 +62,7 @@
 }
 
 .input-wrapper input {
-    width: 100%;
+    width: 70%;
     padding: 15px 45px;
     background: rgba(255, 255, 255, 0.1);
     border: 1px solid rgba(255, 255, 255, 0.2);
@@ -302,5 +302,4 @@
     .social-buttons {
         flex-direction: column;
     }
-} 
 } 
